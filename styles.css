@@ -1,0 +1,200 @@
+/* Navigation bar */
+nav {
+  background-color: #333;
+  color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 10;
+  display: flex;
+  justify-content: space-between;
+  float: right;
+}
+
+nav li {
+  padding: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+
+
+/* Home page */
+#home {
+  background-image: url(bg5.jpg);
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#home h1 {
+  font-size: 4rem;
+  margin-bottom: 0;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  color:rgb(54, 48, 48);
+}
+
+#home p {
+  font-size: 1.5rem;
+  margin-top: 0;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  color:rgb(62, 56, 56);
+}
+
+/* About page */
+#about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(170, 142, 142);
+  height: 100vh;
+}
+
+#about .left {
+  width: 125%;
+  padding: 50px;
+  box-sizing: border-box;
+}
+
+#about .left h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-align: left;
+  font-family: 'Montserrat', sans-serif;
+  color: white
+}
+
+#about .left img {
+  width: 100%;
+  border-radius: 5px;
+}
+#about .right {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#about .box {
+  width: 40%;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
+  background-color: white;
+}
+
+@media screen and (max-width: 768px) {
+  #about .box {
+    width: 100%;
+  }
+}
+
+
+#about .box h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#about .box p {
+  font-size: 1.3rem;
+  margin-top: 0;
+  font-family: 'times new roman', sans-serif;
+}
+
+/* Contact page */
+#contact {
+  background-color: #bcaeae;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+#contact .content {
+  background-color: #fff;
+  padding: 50px;
+  max-width: 600px;
+  width: 100%;
+}
+
+#contact h2 {
+  font-size: 2.5em;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#contact label {
+  font-size: 1.2em;
+  display: block;
+  margin-bottom: 10px;
+}
+
+#contact input, #contact textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 20px;
+}
+
+#contact input[type="text"], #contact input[type="email"], #contact textarea {
+  border: 1px solid #ccc;
+  padding: 5px;
+}
+
+#contact button[type=submit] {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#contact button[type=submit]:hover {
+  background-color: #fff;
+  color: #333;
+  border: 2px solid #333;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.social-links a {
+  display: block;
+  width: 50px;
+  height: 50px;
+  margin: 0 10px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.social-links img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.social-links a:hover img {
+  transform: scale(1.2);
+}
+
